@@ -8,8 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Calculate the correlation of two variables}
   spec.description   = %q{This gem allows to calculate the correlation of two variables (called vectors), the standard deviation and the covariance.}
-  spec.homepage      = "https://github.com/GerryLarios/corr"
-  spec.license       = "https://github.com/GerryLarios/corr"
+  spec.homepage      = "https://rubygems.cor/gems/corr"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["allowed_push_host"] = "https://github.com/GerryLarios/corr"
