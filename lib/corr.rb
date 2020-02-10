@@ -33,10 +33,6 @@ module Corr
     n = vector_x.length
     mean_x = mean(vector_x)
     mean_y = mean(vector_y)
-    result = 0.0
-    for i in 0...n do
-      result += (vector_x[i] - mean_x) * (vector_y[i] - mean_y)
-    end
-    result
+    (0...n).reduce(0.0) { |sum, i| sum + ((vector_x[i] - mean_x) * (vector_y[i] - mean_y))} 
   end
 end
