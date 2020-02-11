@@ -22,7 +22,47 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Correlation
+
+```ruby
+x = [43, 21, 25, 42, 57, 59] # Age
+y = [99, 65, 79, 75, 87, 81] # Glucose level
+
+Corr.correlation(x, y) # 0.5298089018901745
+```
+
+### Sum
+
+```ruby
+x = [43, 21, 25, 42, 57, 59]
+
+Corr.sum(x) # 247
+```
+
+### Mean
+
+```ruby
+x = [1, 3, 2, 5, 8, 7, 12, 2, 4]
+
+Corr.mean(x) # 4.888888888888889
+```
+
+### Standard deviation
+
+```ruby
+x = [9, 2, 5, 4, 12, 7, 8, 11, 9, 3, 7, 4, 12, 5, 4, 10, 9, 6, 9, 4]
+
+Corr.standard_deviation(x) # 2.9832867780352594
+```
+
+### Covariance
+
+```ruby
+x = [2.1, 2.5, 3.6, 4.0]
+y = [8, 10, 12, 14]
+
+Corr.covariance(x, y) # 1.7
+```
 
 ## Development
 
