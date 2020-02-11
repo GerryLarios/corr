@@ -20,11 +20,8 @@ module Corr
   end
 
   def self.covariance(vector_x, vector_y)
-    if vector_x.length == vector_y.length
-      return sum_cov(vector_x, vector_y) / vector_x.length
-    else
-      raise 'The variable lengths are not the same.'
-    end
+    raise 'The variable lengths are not the same.' if vector_x.length != vector_y.length
+    sum_cov(vector_x, vector_y) / vector_x.length
   end
 
   private
